@@ -1,0 +1,2 @@
+# resnext50_for_leaves_classification
+比赛是沐神动手学深度学习课程的树叶分类比赛，模型是最方便的resnext50，方法是微调一下即可。（虽然代码还是copy kaggle上的 但是改了一些加了一些注释num_workers真的巨可恶）
