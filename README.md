@@ -4,7 +4,7 @@
 
 ## 第一版的超参数和实验结果
 1.  learning_rate = 3e-4；weight_decay = 1e-3；batch_size=16；
-    GPU1080显存占了4g左右，CPU3600占用率60%能飙到4GHz，45min跑了12个epoch;valid=saving model with acc 0.912;![image](https://user- images.githubusercontent.com/89777846/226321420-8232ac85-6e68-46ca-82cc-e98d2188288a.png)
+    GPU1080显存占了4g左右，CPU3600占用率60%能飙到4GHz，45min跑了12个epoch;valid=saving model with acc 0.912;![image](https://user-images.githubusercontent.com/89777846/226321420-8232ac85-6e68-46ca-82cc-e98d2188288a.png)
 
     贴一个leaderboard
 ![image](https://user-images.githubusercontent.com/89777846/226322136-7d00ccef-715e-4b13-89bc-91f78207a7cb.png)
