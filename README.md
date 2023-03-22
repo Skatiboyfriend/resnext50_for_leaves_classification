@@ -21,6 +21,15 @@
 ![image](https://user-images.githubusercontent.com/89777846/226873482-b149dbd8-9119-4ffd-9983-d2c11bcdc57c.png)
 
 ## 第三次用resnt34 预训练模型 所有参数都不锁梯度
-90s一个epoch   慢一点  效果自然是比linear probing好的  细调一下学习率优化器估计能上90%
+90s一个epoch   慢一点  效果自然是比linear probing好的  细调一下学习率优化器估计能上0.9
 ![image](https://user-images.githubusercontent.com/89777846/226870518-10b28295-663a-433f-8f22-c5a988e296b7.png)
+
+## 第四次用resnext50 预训练模型但是linear probing（只有最后的softmax分类头有梯度）
+90s一个epoch   快      
+![image](https://user-images.githubusercontent.com/89777846/226889769-a0519e8e-2e3e-47b8-8074-ae12bfc5deab.png)
+
+## 第五次用resnext50 预训练模型  所有参数都不锁梯度
+3min30s一个epoch   显卡内存占了6g    相对来说训练时间是成倍增加了  不过都是30个epoch下还能接受   效果确实好了2个点  能达到0.92
+![image](https://user-images.githubusercontent.com/89777846/226911742-a669e0dc-fbc0-432a-b5f6-433a872d8e59.png)
+
 
