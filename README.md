@@ -20,5 +20,6 @@
 50s一个epoch   快是快  但是结果很低 跑了30个epoch依旧accury只有0.7   应该是模型的原因，其他的因素微调估计不会带来质的提升了
 
 ## 第三次用resnt34 预训练模型 所有参数都不锁梯度
-
+90s一个epoch   慢一点  效果自然是比linear probing好的  细调一下学习率优化器估计能上90%
+![image](https://user-images.githubusercontent.com/89777846/226870518-10b28295-663a-433f-8f22-c5a988e296b7.png)
 
