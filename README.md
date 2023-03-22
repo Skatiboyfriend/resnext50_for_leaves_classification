@@ -18,6 +18,7 @@
 
 ## 第二次用resnt34 预训练模型但是linear probing（只有最后的softmax分类头有梯度）
 50s一个epoch   快是快  但是结果很低 跑了30个epoch依旧accury只有0.7   应该是模型的原因，其他的因素微调估计不会带来质的提升了
+![image](https://user-images.githubusercontent.com/89777846/226873482-b149dbd8-9119-4ffd-9983-d2c11bcdc57c.png)
 
 ## 第三次用resnt34 预训练模型 所有参数都不锁梯度
 90s一个epoch   慢一点  效果自然是比linear probing好的  细调一下学习率优化器估计能上90%
