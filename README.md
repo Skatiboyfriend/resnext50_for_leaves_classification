@@ -44,5 +44,7 @@
 ![image](https://user-images.githubusercontent.com/89777846/227128251-44c28681-fdb9-41f1-9e43-c6bf9e03529c.png)
                      
                      
-         
+## 第八次用resnet34（all_gradient)，resnext50(gradient)，vit_b_16（linear probing）也就是上面实验训练好的3个模型进行模型融合
+新建一个文件，在里面把3个model读取后直接预测 3个模型的权重给的1/3平均     哇！大力出奇迹呀！居然能到0.95！  不够后面要提升一个点肯定都非常困难了
+![image](https://user-images.githubusercontent.com/89777846/227136000-4d4d9fe6-b8c0-44a8-b459-d66fb80ec6b9.png)
 
