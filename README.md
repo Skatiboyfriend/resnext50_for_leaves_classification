@@ -1,4 +1,4 @@
-# resnext50_for_leaves_classification
+# basic_modelfor_leaves_classification
 比赛是沐神动手学深度学习课程的树叶分类比赛，模型是最方便的resnext50，方法是微调一下即可。（虽然代码还是copy kaggle上的 但是改了一些加了一些注释和配置图片方便像我一样的新手从修改文件路径这样开始QAQnum_workers真的巨可恶）
 
 ## 写在开头的备注
@@ -24,6 +24,8 @@
 ## 第三次用resnt34 预训练模型 所有参数都不锁梯度
 90s一个epoch   慢一点  效果自然是比linear probing好的  细调一下学习率优化器估计能上0.9
 ![image](https://user-images.githubusercontent.com/89777846/226870518-10b28295-663a-433f-8f22-c5a988e296b7.png)
+![image](https://user-images.githubusercontent.com/89777846/227128021-df5345a3-9dce-4b17-a8ed-9257f8d50469.png)
+两个结果中第一个是30个epoch，第二个是50个epoch，看来训练时间长了确实过拟合了
 
 ## 第四次用resnext50 预训练模型但是linear probing（只有最后的softmax分类头有梯度）
 90s一个epoch   快      
@@ -38,4 +40,9 @@
 ![image](https://user-images.githubusercontent.com/89777846/226936578-d7f840fa-5fb0-49ed-9ccd-3c15e8a2e52d.png)
 
 ## 第七次用vit_b_16预训练模型  所有参数都不锁梯度
-                     感觉有点爆显存了  
+5-6min一个epoch                    显存占用能到7.5g 感觉有点爆显存了   不知道为什么  按道理来说vit应该是新出的（相对于resnet）模型也大了3倍多  训练时间也最长 效果却没有resnext50好
+![image](https://user-images.githubusercontent.com/89777846/227128251-44c28681-fdb9-41f1-9e43-c6bf9e03529c.png)
+                     
+                     
+         
+
